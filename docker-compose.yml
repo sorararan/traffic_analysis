@@ -1,0 +1,13 @@
+version: '2'
+services:
+  attacker:
+    build:
+      context: containers/attacker
+      dockerfile: Dockerfile
+    tty: true
+  honey_pot:
+    build:
+      context: containers/honey_pot
+      dockerfile: Dockerfile
+    tty: true
+
