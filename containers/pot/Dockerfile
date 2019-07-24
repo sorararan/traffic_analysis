@@ -3,9 +3,6 @@ FROM centos:6
 RUN yum -y update && yum clean all
 
 RUN yum reinstall -y glibc-common && yum clean all
-ENV LANG ja_JP.UTF-8
-ENV LANGUAGE ja_JP:ja
-ENV LC_ALL ja_JP.UTF-8
 
 RUN yum install -y vim wget gcc iputils tcp_wrappers libcap-devel openssl-devel tcp_wrappers-devel xinetd nc wireshark tcpdump ftp && yum clean all
 
