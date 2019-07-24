@@ -7,4 +7,9 @@ services:
     tty: true
     ports:
       - '48080:8080'
+  pot:
+    build:
+      context: containers/pot
+      dockerfile: Dockerfile
+    tty: true
 
