@@ -8,7 +8,7 @@ RUN set -x \
     && apt-get -yqq dist-upgrade \
     && apt-get clean
 RUN apt-cache search metasploit
-RUN apt-get install -y metasploit-framework net-tools iputils-ping
+RUN apt-get install -y metasploit-framework net-tools iputils-ping netcat
 
 CMD ["bash"]
 
